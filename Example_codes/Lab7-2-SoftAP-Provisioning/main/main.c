@@ -121,8 +121,10 @@ void app_main(void)
         ESP_ERROR_CHECK(wifi_prov_mgr_start_provisioning(security, (const void *)pop, service_name, NULL));
 
         ESP_LOGI(TAG, "--------------------------------------------------");
-        ESP_LOGI(TAG, "Open Browser QR Code URL:");
-        ESP_LOGI(TAG, "https://espressif.github.io/esp-jumpstart/qrcode.html?data={\"ver\":\"v1\",\"name\":\"%s\",\"pop\":\"%s\",\"transport\":\"softap\"}",
+        ESP_LOGI(TAG, "[QR CODE URL]: Click or copy the URL below:");
+        ESP_LOGI(TAG, "https://espressif.github.io/esp-jumpstart/qrcode.html?data=%%7B%%22ver%%22%%3A%%22v1%%22%%2C%%22name%%22%%3A%%22%s%%22%%2C%%22pop%%22%%3A%%22%s%%22%%2C%%22transport%%22%%3A%%22softap%%22%%7D",
+                 service_name, pop);
+        ESP_LOGI(TAG, "Payload JSON: {\"ver\":\"v1\",\"name\":\"%s\",\"pop\":\"%s\",\"transport\":\"softap\"}",
                  service_name, pop);
         ESP_LOGI(TAG, "--------------------------------------------------");
     } else {

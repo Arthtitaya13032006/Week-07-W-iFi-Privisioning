@@ -107,7 +107,7 @@ I (26120) app: Connected with IP Address: 192.168.1.155
 
 ## 5. กิจกรรมถอดรหัสซอร์สโค้ดและเขียนผังงาน (Code Deconstruction & BLE GATT Architecture Assignment)
 
-ให้นักศึกษาแกะรอยการทำงานของโมดูล BLE Provisioning ใน `main/app_main.c` แล้วเขียน **ผังโครงสร้างและลำดับเหตุการณ์**:
+ให้นักศึกษาแกะรอยการทำงานของโมดูล BLE Provisioning ใน `main/main.c` แล้วเขียน **ผังโครงสร้างและลำดับเหตุการณ์**:
 
 ### ภารกิจที่ 1: ผังโครงสร้าง GATT Tree & Endpoint Mapping
 ให้นักศึกษาวาดโครงสร้างต้นไม้ (Tree Diagram / Block Diagram) แสดงความสัมพันธ์ระหว่าง:

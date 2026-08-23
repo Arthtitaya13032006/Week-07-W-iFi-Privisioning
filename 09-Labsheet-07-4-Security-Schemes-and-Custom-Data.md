@@ -54,7 +54,7 @@ sequenceDiagram
 
 ---
 
-## 4. โค้ดส่วน Custom Data Handler ในตัวอย่าง `app_main.c`
+## 4. โค้ดส่วน Custom Data Handler ในตัวอย่าง `main.c`
 
 พิจารณาการทำงานของฟังก์ชันจัดการข้อมูล Custom Endpoint:
 
@@ -132,7 +132,7 @@ wifi_prov_mgr_endpoint_register("custom-data", custom_prov_data_handler, NULL);
 
 ## 6. กิจกรรมถอดรหัสซอร์สโค้ดและเขียนผังงาน (Code Deconstruction & Security Flow Assignment)
 
-ให้นักศึกษาแกะรอยการทำงานด้านความปลอดภัยและ Custom Handler ใน `main/app_main.c` แล้วเขียน **ผังการไหลของข้อมูล (Data Flow & Cryptographic Handshake Flow)**:
+ให้นักศึกษาแกะรอยการทำงานด้านความปลอดภัยและ Custom Handler ใน `main/main.c` แล้วเขียน **ผังการไหลของข้อมูล (Data Flow & Cryptographic Handshake Flow)**:
 
 ### ภารกิจที่ 1: ผังขั้นตอนการตรวจสอบ PoP (Security Handshake Decision Flow)
 ให้นักศึกษาวาด Flowchart แสดงการแลกเปลี่ยนคีย์และตรวจสอบสิทธิ์:

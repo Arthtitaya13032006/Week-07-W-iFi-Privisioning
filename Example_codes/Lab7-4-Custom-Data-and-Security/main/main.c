@@ -120,8 +120,10 @@ void app_main(void)
         gpio_set_level(LED_PIN_BLE_PROV, 1);
 
         ESP_LOGI(TAG, "--------------------------------------------------");
-        ESP_LOGI(TAG, "BLE Custom Endpoint Ready! Scan via ESP BLE App:");
-        ESP_LOGI(TAG, "https://espressif.github.io/esp-jumpstart/qrcode.html?data={\"ver\":\"v1\",\"name\":\"%s\",\"pop\":\"%s\",\"transport\":\"ble\"}",
+        ESP_LOGI(TAG, "[QR CODE URL]: Click or copy the URL below:");
+        ESP_LOGI(TAG, "https://espressif.github.io/esp-jumpstart/qrcode.html?data=%%7B%%22ver%%22%%3A%%22v1%%22%%2C%%22name%%22%%3A%%22%s%%22%%2C%%22pop%%22%%3A%%22%s%%22%%2C%%22transport%%22%%3A%%22ble%%22%%7D",
+                 service_name, pop);
+        ESP_LOGI(TAG, "Payload JSON: {\"ver\":\"v1\",\"name\":\"%s\",\"pop\":\"%s\",\"transport\":\"ble\"}",
                  service_name, pop);
         ESP_LOGI(TAG, "--------------------------------------------------");
     } else {
