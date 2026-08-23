@@ -20,10 +20,6 @@
 | **Endpoint**             | Communication Endpoint                      | ช่องทางการรับส่งข้อมูลเสมือนที่ระบุด้วยชื่อ เช่น `prov-session`, `prov-config`                                                    |
 | **Headless Device**      | Headless Device                             | อุปกรณ์อิเล็กทรอนิกส์ที่ไม่มีหน้าจอแสดงผลและไม่มีแป้นพิมพ์สำหรับป้อนข้อมูล                                                        |
 | **Zero-Knowledge Proof** | Zero-Knowledge Proof (ZKP)                  | วิธีการพิสูจน์ว่าตนเองรู้ความลับ โดยไม่ต้องเปิดเผยความลับนั้นให้อีกฝ่ายเห็น                                                       |
-
-salt
-SRP Verifier
-X25519 (Curve25519 ECDH)
-PoP
-Wear-Leveling
-
+| **Salt**                 | Cryptographic Salt                          | ข้อมูลสุ่ม (เช่น 16 ไบต์) ที่นำมาผสมกับรหัสผ่านก่อนคำนวณ Cryptographic Hash หรือ Verifier เพื่อป้องกันการโจมตีแบบ Rainbow Table |
+| **SRP Verifier**         | Secure Remote Password Verifier             | ค่าทางคณิตศาสตร์ที่คำนวณจากรหัสผ่านร่วมกับ Salt สำหรับฝังใน ESP32 เพื่อยืนยันตัวตนใน Security 2 โดยไม่ต้องเก็บรหัสผ่านจริงไว้ใน Flash  |
+| **Wear-Leveling**        | Flash Memory Wear-Leveling                  | กลไกการกระจายการเขียน/ลบข้อมูลลงบน Flash Memory ทุกบล็อกอย่างทั่วถึง เพื่อยืดอายุการใช้งานและป้องกันเซกเตอร์ชำรุดจากการเขียนซ้ำ  |
